@@ -1,18 +1,31 @@
+*{font-family: 'Noto Sans KR', sans-serif;}
 a{ color:#000; text-decoration: none;}
 ul { list-style: none; margin: 0; padding: 0;}
 li { display: inline-block;}
 
+#wrapper{ width:100%; max-width: 1100px; margin: 0 auto;}
+
 #header{ text-align: center; padding:60px 0;}
-#header a{ font-size: 40px;}
+#header a{ font-size: 40px; color:#fff; font-weight: bolder;}
 
+#nav { /*height:60px; 대신 overflow:hidden*/ overflow: hidden; background-color: rgba(55,55,55,1); }
 #nav ul.menus { float: left;}
+#nav ul.menus li{ padding: 20px; border: 1px dashed #fff; box-sizing: border-box;}
+#nav ul.menus li a{ color:#fff;}
+#nav ul.menus li.active{ background-color:#fff; }
+#nav ul.menus li.active a{ color:#000;}
+
 #nav ul.icons{ float: right;} 
+#nav ul.icons li{ padding: 20px;}
+#nav ul.icons a{ color: #fff;}
 
-#main .featured header h2{ text-align: center; padding:50px 0 40px;}/**/
+#main .featured{ background: #fff; padding:40px;}
+#main .featured header h2{ text-align: center; padding:20px 0 40px; font-size: 30px;}
 #main .featured header a img{ width: 100%;}
+#main .featured p{ margin: 30px 0;}
 
-#footer{ display: flex;}
-#footer .contact, #footer .info{ flex: 1;}
+#footer{ display: flex; background: #eee;}
+#footer .contact, #footer .info{ flex: 1; padding: 30px;}
 /* 1:1 비율로 들어감
 #footer .contact{ flex: 1;}
 #footer .infot{ flex: 2;}
@@ -21,8 +34,8 @@ li { display: inline-block;}
 
 #footer .contact .inputs{}
 #footer .contact .inputs label{}
-#footer .contact .inputs input{ width:100%; height: 60px; border:3px solid #ccc; box-sizing: border-box; margin-bottom:30px;}
-#footer .contact .inputs textarea{ box-sizing: border-box; width: 100%; border:#ccc solid 3px;margin-bottom:30px;}
+#footer .contact .inputs input{ width:100%; height: 60px; border:2px solid #ccc; box-sizing: border-box; margin-bottom:30px;}
+#footer .contact .inputs textarea{ box-sizing: border-box; width: 100%; border:#ccc solid 2px;margin-bottom:30px;}
 #footer .contact .submit input{ border:solid 5px #333; background: rgb(255,255,255); padding:1.25em 1.5em; font-weight: bolder; }
 
 /* flexible */
@@ -33,3 +46,7 @@ li { display: inline-block;}
 
 #copyright{ background-color: rgb(33,33,33); padding:20px 0; text-align: center; color:#ddd;}
 #copyright a { color:#ddd}
+
+.bg{ position: fixed; top: 0; left: 0; z-index: -1; opacity: .4;
+    width:100vw; height: 100vh;/* viewport-widht , viewport-height*/
+    background: url(../images/background.png) no-repeat fixed center; }
