@@ -1,0 +1,17 @@
+*{ margin: 0; padding:0;}
+ul{list-style: none}
+a{text-decoration: none; color:#fff;}
+img{ width: 100%;}
+body{ background-image: url(../images/background.png); background-size: cover; background-position: center center}
+.center{ width: 1000px; margin: 0 auto;}
+#header{text-align: center; padding: 2em 0;}
+#header a{ color:#fff;}
+#nav{height: 60px; background: #000; }
+#nav ul{float:left; height: 50px;}
+#nav ul:last-child{float: right;}
+#nav li{float: left;}
+#nav li a{ display: block; padding: 1.25em; }
+#nav li a:hover{ background: #aaa;}
+
+#main{clear: both; background: #fff; padding: 3em; box-sizing: border-box;}
+#main a{ color:#000;}
