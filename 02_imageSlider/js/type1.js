@@ -1,4 +1,8 @@
 $(document).ready(function(){   //html과 css불러오기전에 js실행 방지
+    /*
+    document.getElementById("slider")
+    document.getElementsByClassName("slider")
+    */
     $items = $("#slider ul li.item");
     
     var currentIndex = 1; //현재
