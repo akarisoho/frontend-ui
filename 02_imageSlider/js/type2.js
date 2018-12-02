@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    /*효과 https://api.jquery.com/category/effects/ */ */
     $("#slider ul li.item:gt(0)").hide();
 //gt
     setInterval(function() {
